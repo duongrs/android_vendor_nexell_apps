@@ -1,0 +1,386 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nxdualaudiotest.DualAudioTestActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.29" >
+
+            <TextView
+                android:id="@+id/textTitle0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/title0" />
+
+            <TextView
+                android:id="@+id/textPath0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textTitle0"
+                android:layout_marginTop="10dp"
+                android:text="@string/path" />
+
+            <TextView
+                android:id="@+id/textType0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textPath0"
+                android:layout_marginTop="10dp"
+                android:text="@string/type" />
+
+            <TextView
+                android:id="@+id/textVolume0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textType0"
+                android:layout_marginTop="10dp"
+                android:text="@string/volume" />
+
+            <CheckBox
+                android:id="@+id/checkEnable0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/checkRepeat0"
+                android:layout_alignLeft="@+id/checkRepeat0"
+                android:layout_marginBottom="5dp"
+                android:checked="true"
+                android:text="@string/enable" />
+
+            <CheckBox
+                android:id="@+id/checkRepeat0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnStop0"
+                android:layout_alignLeft="@+id/btnPlay0"
+                android:layout_marginBottom="5dp"
+                android:checked="true"
+                android:text="@string/repeat" />
+
+            <Button
+                android:id="@+id/btnPlay0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/btnStop0"
+                android:text="@string/play" />
+
+            <Button
+                android:id="@+id/btnStop0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/stop" />
+
+            <TextView
+                android:id="@+id/textPathValue0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textPath0"
+                android:layout_alignBottom="@+id/textPath0"
+                android:layout_alignRight="@+id/spinnerType0"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/textPath0"
+                android:text="@string/file_path" />
+            
+            <Spinner
+                android:id="@+id/spinnerType0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textType0"
+                android:layout_alignBottom="@+id/textType0"
+                android:layout_alignRight="@+id/seekVolume0"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/textType0" />
+     
+            <SeekBar
+                android:id="@+id/seekVolume0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textVolume0"
+                android:layout_toLeftOf="@+id/btnPlay0"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/textVolume0" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.01" >
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.29" >
+
+            <TextView
+                android:id="@+id/textTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/title1" />
+
+            <TextView
+                android:id="@+id/textPath1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textTitle1"
+                android:layout_marginTop="10dp"
+                android:text="@string/path" />
+
+            <TextView
+                android:id="@+id/textType1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textPath1"
+                android:layout_marginTop="10dp"
+                android:text="@string/type" />
+
+            <TextView
+                android:id="@+id/textVolume1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textType1"
+                android:layout_marginTop="10dp"
+                android:text="@string/volume" />
+
+            <CheckBox
+                android:id="@+id/checkEnable1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/checkRepeat1"
+                android:layout_alignLeft="@+id/checkRepeat1"
+                android:layout_marginBottom="5dp"
+                android:checked="true"
+                android:text="@string/enable" />
+
+            <CheckBox
+                android:id="@+id/checkRepeat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnStop1"
+                android:layout_alignLeft="@+id/btnPlay1"
+                android:layout_marginBottom="5dp"
+                android:checked="true"
+                android:text="@string/repeat" />
+
+            <Button
+                android:id="@+id/btnPlay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/btnStop1"
+                android:text="@string/play" />
+
+            <Button
+                android:id="@+id/btnStop1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/stop" />
+
+            <TextView
+                android:id="@+id/textPathValue1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textPath1"
+                android:layout_alignBottom="@+id/textPath1"
+                android:layout_alignRight="@+id/spinnerType1"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/textPath1"
+                android:text="@string/file_path" />
+            
+            <Spinner
+                android:id="@+id/spinnerType1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textType1"
+                android:layout_alignBottom="@+id/textType1"
+                android:layout_alignRight="@+id/seekVolume1"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/textType1" />
+     
+            <SeekBar
+                android:id="@+id/seekVolume1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textVolume1"
+                android:layout_toLeftOf="@+id/btnPlay1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/textVolume1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.01" >
+        </RelativeLayout>
+                
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.29" >
+
+            <TextView
+                android:id="@+id/textTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/title2" />
+
+            <TextView
+                android:id="@+id/textPath2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textTitle2"
+                android:layout_marginTop="10dp"
+                android:text="@string/path" />
+
+            <TextView
+                android:id="@+id/textType2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textPath2"
+                android:layout_marginTop="10dp"
+                android:text="@string/type" />
+
+            <TextView
+                android:id="@+id/textVolume2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textType2"
+                android:layout_marginTop="10dp"
+                android:text="@string/volume" />
+
+            <CheckBox
+                android:id="@+id/checkEnable2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/checkRepeat2"
+                android:layout_alignLeft="@+id/checkRepeat2"
+                android:layout_marginBottom="5dp"
+                android:checked="false"
+                android:text="@string/enable" />
+
+            <CheckBox
+                android:id="@+id/checkRepeat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnStop2"
+                android:layout_alignLeft="@+id/btnPlay2"
+                android:layout_marginBottom="5dp"
+                android:checked="true"
+                android:text="@string/repeat" />
+
+            <Button
+                android:id="@+id/btnPlay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/btnStop2"
+                android:text="@string/play" />
+
+            <Button
+                android:id="@+id/btnStop2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/stop" />
+
+            <TextView
+                android:id="@+id/textPathValue2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textPath2"
+                android:layout_alignBottom="@+id/textPath2"
+                android:layout_alignRight="@+id/spinnerType2"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/textPath2"
+                android:text="@string/file_path" />
+            
+            <Spinner
+                android:id="@+id/spinnerType2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textType2"
+                android:layout_alignBottom="@+id/textType2"
+                android:layout_alignRight="@+id/seekVolume2"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/textType2" />
+     
+            <SeekBar
+                android:id="@+id/seekVolume2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textVolume2"
+                android:layout_toLeftOf="@+id/btnPlay2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/textVolume2" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.01" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.10" >
+
+            <Button
+                android:id="@+id/btnPlayAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/btnStopAll"
+                android:text="@string/all_play" />
+
+            <Button
+                android:id="@+id/btnStopAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/all_stop" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

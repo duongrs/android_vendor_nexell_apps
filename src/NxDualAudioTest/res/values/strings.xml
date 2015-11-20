@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NxDualAudioTest</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title0">Audio Track #0</string>
+	<string name="title1">Audio Track #1</string>
+	<string name="title2">Audio Track #1</string>
+	<string name="path">Audio Path    :</string>
+	<string name="file_path">Select Audio Path...</string>
+	<string name="type">Media Type    :</string>
+	<string name="volume">Volume           :</string>
+	<string name="enable">Enable</string>
+	<string name="repeat">Repeat</string>
+	<string name="play">Play</string>
+	<string name="stop">Stop</string>
+	<string name="all_play">All Play</string>
+	<string name="all_stop">All Stop</string>
+</resources>
